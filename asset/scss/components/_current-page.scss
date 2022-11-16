@@ -1,0 +1,26 @@
+.current-page {
+	position: absolute;
+	display: flex;
+	padding: 30px 60px;
+	width: 100%;
+	font-family: $font-en;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1;
+	letter-spacing: -0.05em;
+
+	@include mobile {
+		font-size: 12px;
+		padding: 30px 16px;
+	}
+
+	span {
+		&:nth-child(2) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
